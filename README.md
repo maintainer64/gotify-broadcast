@@ -18,6 +18,8 @@ If you did not find you gotify version, follow these steps to build one for your
 1. `make download-tools`
 1. `make GOTIFY_VERSION=v1.2.1 build` to build the plugin for your gotify version (`GOTIFY_VERSION` could be a tag, a branch or a commit).
 
+If you want build manual docker, see this [reference](./docker_example/README.md)
+
 ## Configuration
 
 The configuration contains three keys: `channels`, `sender_filter`, and `receiver_filter`.

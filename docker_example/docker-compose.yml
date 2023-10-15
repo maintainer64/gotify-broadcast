@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  gotify:
+    image: maintainer64/gotify-server-and-broadcast-plugin-alpine:v0.4.0
+    container_name: gotify_server
+    build:
+      context: .
+    ports:
+      - 8080:80
+    environment:
+      - GIN_MODE=release  # debug | release | test
+    volumes:
+      - "./gotify_data/config.yml:/etc/gotify/config.yml"
